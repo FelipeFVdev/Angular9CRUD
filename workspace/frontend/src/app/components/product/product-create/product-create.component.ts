@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ProductService } from '../product.service';
 import { Router } from '@angular/router';
 import { Product } from '../product.model';
+import { HeaderService } from '../../template/header/header.service';
 
 @Component({
   selector: 'app-product-create',
@@ -17,9 +18,13 @@ export class ProductCreateComponent {
 
   }
 
-  constructor(private productService: ProductService,
+  constructor(private productService: ProductService, private headerService: HeaderService,
     private router: Router) {
-
+    headerService.headerData = {
+      title: 'Cadastro de Produtos',
+      icon: 'storefront',
+      routeUrl: '/products',
+    }
   }
 
   ngOnInit(): void {

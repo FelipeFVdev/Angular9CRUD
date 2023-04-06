@@ -2,13 +2,13 @@
   "products": [
     {
       "id": 1,
-      "name": "Caneta BIC preta",
-      "price": 5.89
+      "name": "caneta bic",
+      "price": 100
     },
     {
       "id": 2,
       "name": "Notebook",
-      "price": 5.89
+      "price": 5500.89
     },
     {
       "id": 3,
